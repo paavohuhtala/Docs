@@ -96,13 +96,17 @@ The scripting system supports three kinds of variables:
 
   - Counters are 32-bit signed integer variables, which can be modified and compared in various ways.
 
+  - Counters are created the first time they are referenced, with the initial value of zero.
+    
+    - This applies to both actions and conditions; comparing a non-existent counter to 0 returns ``true``. 
+
   - They overflow and underflow.
 
 - Timers
 
   - Timers are automatically decrementing counters with a configurable starting value.
 
-  - Timers tick down towards zero, and stay at ``-1`` when they expire.
+  - Timers tick down towards zero, and stop when the counter variable becomes negative.
 
   - All counter actions can be used on timers and vice versa.
 

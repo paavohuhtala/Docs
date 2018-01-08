@@ -46,8 +46,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OpenSAGE'
-copyright = u'2017, Tim Jones, Stephan Vedder'
-author = u'Tim Jones, Stephan Vedder'
+copyright = u'2017, Tim Jones, Stephan Vedder, Paavo Huhtala'
+author = u'Tim Jones, Stephan Vedder, Paavo Huhtala'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -147,7 +147,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'OpenSAGE.tex', u'OpenSAGE Documentation',
-     u'Tim Jones, Stephan Vedder', 'manual'),
+     u'Tim Jones, Stephan Vedder, Paavo Huhtala', 'manual'),
 ]
 
 
